@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="generator" content="Observable Framework v1.12.0">
+<title>국회의원별 통계 | 국회의원 통계</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="../../_observablehq/theme-cotton,wide.0a3aa039.css">
+<link rel="preload" as="style" href="../../_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="../../_observablehq/theme-cotton,wide.0a3aa039.css">
+<link rel="stylesheet" type="text/css" href="../../_observablehq/stdlib/inputs.ea9fd553.css">
+<link rel="modulepreload" href="../../_observablehq/client.b1838636.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.8eb97cbb.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.8048ec16.js">
+<link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
+<link rel="modulepreload" href="../../_import/components/common.7e2f4611.js">
+<link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib/inputs.9d076414.js">
+<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="../../_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="icon" href="../../_file/observable.1af93621.png" type="image/png" sizes="32x32">
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-4EE71THGPZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-4EE71THGPZ');
+  </script>
+<script type="module">
+
+import {define} from "../../_observablehq/client.b1838636.js";
+import {registerFile} from "../../_observablehq/stdlib.8048ec16.js";
+
+registerFile("../../data/bill-proposal/age_13.csv", {"name":"../../data/bill-proposal/age_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_13.15e2b91b.csv","lastModified":1732977016597,"size":174688});
+registerFile("../../data/bill-proposal/age_14.csv", {"name":"../../data/bill-proposal/age_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_14.164b2c16.csv","lastModified":1732977016597,"size":107455});
+registerFile("../../data/bill-proposal/age_15.csv", {"name":"../../data/bill-proposal/age_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_15.a00ce05f.csv","lastModified":1732977016597,"size":364317});
+registerFile("../../data/bill-proposal/age_16.csv", {"name":"../../data/bill-proposal/age_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_16.334377ac.csv","lastModified":1732977016598,"size":951972});
+registerFile("../../data/bill-proposal/age_17.csv", {"name":"../../data/bill-proposal/age_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_17.4d149b32.csv","lastModified":1732977016600,"size":3163850});
+registerFile("../../data/bill-proposal/age_18.csv", {"name":"../../data/bill-proposal/age_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_18.4fe5fae4.csv","lastModified":1732977016604,"size":6399848});
+registerFile("../../data/bill-proposal/age_19.csv", {"name":"../../data/bill-proposal/age_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_19.f477a8b9.csv","lastModified":1732977016611,"size":8850625});
+registerFile("../../data/bill-proposal/age_20.csv", {"name":"../../data/bill-proposal/age_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_20.8bb599e6.csv","lastModified":1732977016618,"size":12221829});
+registerFile("../../data/bill-proposal/age_21.csv", {"name":"../../data/bill-proposal/age_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_21.583e0cc6.csv","lastModified":1732977016627,"size":13429281});
+registerFile("../../data/bill-proposal/mappings_13.csv", {"name":"../../data/bill-proposal/mappings_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_13.7d89d807.csv","lastModified":1732978953487,"size":55913});
+registerFile("../../data/bill-proposal/mappings_14.csv", {"name":"../../data/bill-proposal/mappings_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_14.966ab01b.csv","lastModified":1732978953487,"size":88645});
+registerFile("../../data/bill-proposal/mappings_15.csv", {"name":"../../data/bill-proposal/mappings_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_15.61267f06.csv","lastModified":1732978953488,"size":380260});
+registerFile("../../data/bill-proposal/mappings_16.csv", {"name":"../../data/bill-proposal/mappings_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_16.6f03b8e5.csv","lastModified":1732978953489,"size":1784800});
+registerFile("../../data/bill-proposal/mappings_17.csv", {"name":"../../data/bill-proposal/mappings_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_17.69319f8a.csv","lastModified":1732978953493,"size":5726681});
+registerFile("../../data/bill-proposal/mappings_18.csv", {"name":"../../data/bill-proposal/mappings_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_18.d0e66788.csv","lastModified":1732978953500,"size":11570552});
+registerFile("../../data/bill-proposal/mappings_19.csv", {"name":"../../data/bill-proposal/mappings_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_19.4b127708.csv","lastModified":1732978953510,"size":15525288});
+registerFile("../../data/bill-proposal/mappings_20.csv", {"name":"../../data/bill-proposal/mappings_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_20.3ed8528e.csv","lastModified":1732978953523,"size":20693069});
+registerFile("../../data/bill-proposal/mappings_21.csv", {"name":"../../data/bill-proposal/mappings_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_21.26cfd0f6.csv","lastModified":1732978953538,"size":22845867});
+registerFile("../../data/member/all.csv", {"name":"../../data/member/all.csv","mimeType":"text/csv","path":"../../_file/data/member/all.1244f34a.csv","lastModified":1732859080044,"size":1418595});
+
+define({id: "92a00ed7", inputs: ["FileAttachment"], outputs: ["_","targetAges","fixMaxWidth","members","width","numberPattern","filteredMember"], body: async (FileAttachment) => {
+const [{default: _}, {targetAges, fixMaxWidth}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.7e2f4611.js")]);
+
+const members = await FileAttachment("../../data/member/all.csv").csv({typed: true})
+const width = window.innerWidth;
+
+const numberPattern = /[0-9]+/
+const filteredMember = _.filter(members, (member) => {
+    let ages = member["당선대수"] || "";
+    return _.split(ages, ",")
+      .map((age) => age.replaceAll(/[^0-9]/g, ""))
+      .map((age) => _.toInteger(age))
+      .find((age) => (targetAges.includes(age)));
+});
+return {_,targetAges,fixMaxWidth,members,width,numberPattern,filteredMember};
+}});
+
+define({id: "68da4f03", inputs: ["view","Inputs","filteredMember"], outputs: ["search"], body: (view,Inputs,filteredMember) => {
+const search = view(Inputs.search(filteredMember, {placeholder: "이름 검색", columns:["국회의원명", "국회의원코드", "정당명", "당선대수", "재선구분명"]}));
+return {search};
+}});
+
+define({id: "63dee480", inputs: ["location","html"], outputs: ["makeSearchResult"], body: (location,html) => {
+function makeSearchResult(item) {
+    // github pages에 배포시 repository name이 path에 붙음.
+    const href = location.href;
+    const urlPrefix = href.substring(0, href.indexOf("/pages/member/search"));
+    let name = item["국회의원명"];
+    let code = item["국회의원코드"];
+    let party = item["정당명"];
+    let detail = `${item["재선구분명"]}(${item["당선대수"]})`
+    let link = `${urlPrefix}/pages/member/${name}-${code}`
+    return html`
+    <a href="${link}">
+        <div class="card">
+            <h2>${name}(${party})</h2>
+            <span style="font-weight: 700; font-size: 20px;">${detail}</span>
+        </div>
+    </a>`;
+}
+return {makeSearchResult};
+}});
+
+define({id: "c0638857", mode: "inline", inputs: ["search","makeSearchResult","display"], body: async (search,makeSearchResult,display) => {
+display(await(
+search.map((item) => makeSearchResult(item))
+))
+}});
+
+define({id: "ec9c850b", inputs: ["fixMaxWidth"], body: (fixMaxWidth) => {
+fixMaxWidth();
+}});
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link"><a href="../../">국회의원 통계</a></li>
+  </ol>
+  <details>
+    <summary>법안 발의 통계(국회의원별)</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../bill-proposal/member-21">제 21대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-20">제 20대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-19">제 19대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-18">제 18대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-17">제 17대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-16">제 16대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-15">제 15대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-14">제 14대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/member-13">제 13대</a></li>
+    </ol>
+  </details>
+  <details>
+    <summary>법안 발의 통계(정당별)</summary>
+    <ol>
+    <li class="observablehq-link"><a href="../bill-proposal/party-21">제 21대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-20">제 20대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-19">제 19대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-18">제 18대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-17">제 17대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-16">제 16대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-15">제 15대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-14">제 14대</a></li>
+    <li class="observablehq-link"><a href="../bill-proposal/party-13">제 13대</a></li>
+    </ol>
+  </details>
+  <ol>
+    <li class="observablehq-link observablehq-link-active"><a href="./search">국회의원별 통계</a></li>
+  </ol>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<aside id="observablehq-toc" data-selector="h1:not(:first-of-type)[id], h2:first-child[id], :not(h1) + h2[id]">
+<nav>
+<div>Contents</div>
+<ol>
+<li class="observablehq-secondary-link"><a href="#-1">집계방식 및 데이터 가공시 예외 사항</a></li>
+</ol>
+</nav>
+</aside>
+<main id="observablehq-main" class="observablehq">
+<br>
+<h1 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#">국회의원 검색</a></h1>
+<div class="observablehq observablehq--block"><!--:92a00ed7:--></div>
+<div class="observablehq observablehq--block"><!--:68da4f03:--></div>
+<div class="observablehq observablehq--block"><!--:63dee480:--></div>
+<div class="grid-cols-1">
+  <observablehq-loading></observablehq-loading><!--:c0638857:-->
+</div>
+<hr>
+<h2 id="-1" tabindex="-1"><a class="observablehq-header-anchor" href="#-1">집계방식 및 데이터 가공시 예외 사항</a></h2>
+<br>
+<h3 id="-2" tabindex="-1"><a class="observablehq-header-anchor" href="#-2">데이터 처리 방법</a></h3>
+<ol>
+<li><a href="https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OOWY4R001216HX11439" target="_blank" rel="noopener noreferrer">국회의원 정보 통합 API</a>의로 전체 국회의원 목록을 획득.</li>
+<li><a href="https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OK7XM1000938DS17215" target="_blank" rel="noopener noreferrer">국회의원 발의법률안 API</a>로 발의법률안 목록 획득.</li>
+<li>각 발의법률안 정보를 순회하며 <code>제안자목록링크(MEMBER_LIST)</code>의 URL에 접속해 전체 발의자 목록을 획득.
+<ul>
+<li>전체 발의자 목록을 순회하며 <code>본회의심의결과(PROC_RESULT)</code>에 따라 국회의원별로 발의법안의 본회의심의결과별 건수를 집계.</li>
+<li>이때, <code>대표발의자(RST_PROPSER)</code>인 경우와 그렇지 않은 경우 건수를 별도로 집계함.</li>
+</ul>
+</li>
+<li>정당별 데이터는 위 방식으로 집계 된 국회의원별로 집계 된 데이터를 정당별로 다시 한번 병합 한 데이터 임.
+<ul>
+<li><strong>공동발의의 경우 한 정당에서 여러명이 함께 발의한 경우이므로 이 방식으로 집계시 중복이 많아, 정당별 데이터는 <code>대표발의</code>만 사용함.</strong></li>
+</ul>
+</li>
+</ol>
+<h3 id="-3" tabindex="-1"><a class="observablehq-header-anchor" href="#-3">예외 사항</a></h3>
+<ul>
+<li><a href="https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OK7XM1000938DS17215" target="_blank" rel="noopener noreferrer">국회의원 발의법률안 API</a>에 포함 된 <code>제안자목록링크(MEMBER_LIST)</code>로 접속 가능한 페이지에 해당 법률안을 발의한 국회의원의 이름 및 한자가 표시됨.</li>
+<li>하지만, 그 페이지의 한자와 <a href="https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OOWY4R001216HX11439" target="_blank" rel="noopener noreferrer">국회의원 정보 통합 API</a>로 조회한 결과의 한자가 서로 상이하거나 한자가 없는 경우가 많음.</li>
+<li>각 대수별 국회의원 중 동명이인의 경우 <code>이름+한자</code>를 사용하고, 그 이외의 경우 <code>이름</code>을 기준으로 발의한 의원을 특정 하였음.</li>
+<li>각 대수별 보정/예외 처리 된 목록은 <code>법안 발의 통계(국회의원별)</code> 페이지 참조</li>
+</ul>
+<div class="observablehq observablehq--block"><!--:ec9c850b:--></div>
+</main>
+<footer id="observablehq-footer">
+<nav><a rel="prev" href="../bill-proposal/party-13"><span>제 13대</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-02T16:50:30">Dec 2, 2024</a>.</div>
+</footer>
+</div>
