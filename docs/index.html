@@ -11,6 +11,7 @@
 <link rel="modulepreload" href="./_observablehq/client.b1838636.js">
 <link rel="modulepreload" href="./_observablehq/runtime.8eb97cbb.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.8048ec16.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/063eb405.js">
 <link rel="icon" href="./_file/observable.1af93621.png" type="image/png" sizes="32x32">
 
   <!-- Google tag (gtag.js) -->
@@ -24,7 +25,38 @@
   </script>
 <script type="module">
 
-import "./_observablehq/client.b1838636.js";
+import {define} from "./_observablehq/client.b1838636.js";
+
+define({id: "a992e268", inputs: ["location","html"], outputs: ["makeLink"], body: (location,html) => {
+function makeLink(text, pagePath) {
+  // github pages에 배포시 repository name이 path에 붙음.
+  let urlPrefix = location.href;
+  const lastCh = urlPrefix.slice(-1);
+  if (lastCh == "/") {
+    urlPrefix = urlPrefix.slice(0, -1);
+  }
+  return html`<a href="${urlPrefix}${pagePath}">${text}</a>`
+}
+return {makeLink};
+}});
+
+define({id: "7017b880", mode: "inline", inputs: ["makeLink","display"], body: async (makeLink,display) => {
+display(await(
+makeLink("법안 발의 통계(국회의원별)", "/pages/bill-proposal/member-21")
+))
+}});
+
+define({id: "01f5b7f4", mode: "inline", inputs: ["makeLink","display"], body: async (makeLink,display) => {
+display(await(
+makeLink("법안 발의 통계(정당별)", "/pages/bill-proposal/party-21")
+))
+}});
+
+define({id: "f73065fb", mode: "inline", inputs: ["makeLink","display"], body: async (makeLink,display) => {
+display(await(
+makeLink("국회의원별 통계", "/pages/member/search")
+))
+}});
 
 </script>
 <input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
@@ -75,9 +107,10 @@ import "./_observablehq/client.b1838636.js";
   <a href="https://open.assembly.go.kr" target="_blank" rel="noopener noreferrer">열린국회<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
 </div>
 <h2 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#">기능</a></h2>
+<div class="observablehq observablehq--block"><!--:a992e268:--></div>
 <div class="grid grid-cols-2">
   <div class="card">
-    <h1><strong>법안 발의 통계(국회의원별)</strong></h1>
+    <h1><strong><observablehq-loading></observablehq-loading><!--:7017b880:--></strong></h1>
     <h3 style="padding-top: 10px"><b>범위</b></h3>
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">`제 13대` 부터 `제 21대`까지의 통계를 제공합니다.</div>
     <h3 style="padding-top: 10px"><b>확인 가능한 정보</b></h3>
@@ -87,7 +120,7 @@ import "./_observablehq/client.b1838636.js";
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">...등의 법률안 발의 정보를 국회의원 별로 집계한 정보</div>
   </div>
   <div class="card">
-    <h1><strong>법안 발의 통계(정당별)</strong></h1>
+    <h1><strong><observablehq-loading></observablehq-loading><!--:01f5b7f4:--></strong></h1>
     <h3 style="padding-top: 10px"><b>범위</b></h3>
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">`제 13대` 부터 `제 21대`까지의 통계를 제공합니다.</div>
     <h3 style="padding-top: 10px"><b>확인 가능한 정보</b></h3>
@@ -97,7 +130,7 @@ import "./_observablehq/client.b1838636.js";
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">...등의 법률안 발의 정보를 정당별로 집계한 정보</div>
   </div>
   <div class="card">
-    <h1><strong>국회의원별 통계</strong></h1>
+    <h1><strong><observablehq-loading></observablehq-loading><!--:f73065fb:--></strong></h1>
     <h3 style="padding-top: 10px"><b>범위</b></h3>
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">`제 13대` 부터 `제 21대`까지의 통계를 제공합니다.</div>
     <h3 style="padding-top: 10px"><b>확인 가능한 정보</b></h3>
@@ -173,6 +206,6 @@ import "./_observablehq/client.b1838636.js";
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./pages/bill-proposal/member-21"><span>제 21대</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-02T22:37:23">Dec 2, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-02T23:41:19">Dec 2, 2024</a>.</div>
 </footer>
 </div>
