@@ -58,6 +58,12 @@ makeLink("국회의원별 통계", "/pages/member/search")
 ))
 }});
 
+define({id: "b851a1a9", mode: "inline", inputs: ["makeLink","display"], body: async (makeLink,display) => {
+display(await(
+makeLink("윤석렬 대통령 탄핵소추안 불참 명단", "/pages/member/rebellion")
+))
+}});
+
 </script>
 <input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
 <label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
@@ -96,6 +102,7 @@ makeLink("국회의원별 통계", "/pages/member/search")
   </details>
   <ol>
     <li class="observablehq-link"><a href="./pages/member/search">국회의원별 통계</a></li>
+    <li class="observablehq-link"><a href="./pages/member/rebellion">윤석렬 대통령 탄핵소추안 불참 명단</a></li>
   </ol>
 </nav>
 <script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
@@ -139,6 +146,14 @@ makeLink("국회의원별 통계", "/pages/member/search")
     <div style="font-weight: 500; font-size: 15px; margin-left: 10px">공동발의는 누구 혹은 어떤 정당과 가장 많이 했는가?</div>
     <div style="font-weight: 500; font-size: 15px; margin-left: 10px">각 임기별 대표발의 법률안의 목록은 어떻게 되는가?</div>
     <div style="font-weight: bold; font-size: 15px; margin-left: 10px">...등의 법률안 발의 정보를 국회의원 개개인 별로 집계한 정보</div>
+  </div>
+  <div class="card">
+    <h1><strong><observablehq-loading></observablehq-loading><!--:b851a1a9:--></strong></h1>
+    <h3 style="padding-top: 10px"><b>범위</b></h3>
+    <div style="font-weight: bold; font-size: 15px; margin-left: 10px">2024년 12월 7일 진행 된 윤석렬 대통령 탄핵 소추안 불참자 명단을 제공 합니다.</div>
+    <h3 style="padding-top: 10px"><b>확인 가능한 정보</b></h3>
+    <div style="font-weight: 500; font-size: 15px; margin-left: 10px">사진 및 당선 대수표시</div>
+    <div style="font-weight: 500; font-size: 15px; margin-left: 10px">이름, 지역구 등으로 검색 가능</div>
   </div>
   <div class="card">
     <h1><strong>... 추가 예정 ...</strong></h1>
@@ -206,6 +221,6 @@ makeLink("국회의원별 통계", "/pages/member/search")
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="next" href="./pages/bill-proposal/member-21"><span>제 21대</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-02T23:41:19">Dec 2, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-09T00:37:33">Dec 9, 2024</a>.</div>
 </footer>
 </div>

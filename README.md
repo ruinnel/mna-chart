@@ -19,10 +19,15 @@
   - 국회의원의 임기중 표결 참여율
   - 국회의원이 찬성한 법안의 대표발의자 정당분포
   - 국회의원이 반대한 법안의 대표발의자 정당분포
+- [x] 2024년 12월 7일 - 윤석렬 대통령 탄핵소추안 불참 명단
 
 ## known issue
   - API로 자료를 수집 및 집계하는 과정에 발생 한 예외상황 입니다.
 
+### [본회의장 떠난 105인, 이름과 얼굴을 기록한다](https://www.hani.co.kr/arti/politics/politics_general/1171798.html)
+  - 한겨례 신문 2024년 12월 9일자 1면
+  - 위 기사에 포함된 명단을 [국회의원 정보 통합 API](https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OOWY4R001216HX11439)로 조회.
+  
 ### [국회의원 정보 통합 API](https://open.assembly.go.kr/portal/data/service/selectAPIServicePage.do/OOWY4R001216HX11439)
 
 - <https://open.assembly.go.kr/portal/openapi/ALLNAMEMBER>
