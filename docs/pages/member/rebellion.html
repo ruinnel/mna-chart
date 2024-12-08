@@ -64,8 +64,8 @@ console.log(members)
 return {_,targetAges,fixMaxWidth,members,width};
 }});
 
-define({id: "10bd3d35", inputs: ["view","Inputs","members"], outputs: ["search"], body: (view,Inputs,members) => {
-const search = view(Inputs.search(members, {placeholder: "이름 검색", columns:["국회의원명", "국회의원코드", "정당명", "당선대수", "재선구분명", "선거구명"]}));
+define({id: "084eaf86", inputs: ["view","Inputs","members"], outputs: ["search"], body: (view,Inputs,members) => {
+const search = view(Inputs.search(members, {placeholder: "이름, 지역구 검색", columns:["국회의원명", "국회의원코드", "선거구명"]}));
 return {search};
 }});
 
@@ -172,7 +172,7 @@ fixMaxWidth();
 <hr>
 <h1 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#">국회의원 검색</a></h1>
 <div class="observablehq observablehq--block"><!--:5c451bb8:--></div>
-<div class="observablehq observablehq--block"><!--:10bd3d35:--></div>
+<div class="observablehq observablehq--block"><!--:084eaf86:--></div>
 <div class="observablehq observablehq--block"><!--:959d50ca:--></div>
 <div class="grid grid-cols-3">
   <observablehq-loading></observablehq-loading><!--:c0638857:-->
@@ -181,6 +181,6 @@ fixMaxWidth();
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./search"><span>국회의원별 통계</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-09T00:37:33">Dec 9, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-09T00:55:58">Dec 9, 2024</a>.</div>
 </footer>
 </div>
