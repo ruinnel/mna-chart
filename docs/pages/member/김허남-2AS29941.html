@@ -15,7 +15,7 @@
 <link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
 <link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
-<link rel="modulepreload" href="../../_import/components/member.c482cc74.js">
+<link rel="modulepreload" href="../../_import/components/member.3f969626.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
 <link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/e828d8c8.js">
@@ -110,7 +110,7 @@ display(await(
 }});
 
 define({id: "ef26cb33", inputs: ["FileAttachment","html"], outputs: ["_","allStatus","allKind","allStatusColors","targetAges","parquetToJson","billProposals","billProposalMappings","fixMaxWidth","makeCoworkerRank","coworkerRankMemberChart","coworkerRankPartyChart","membersParquet","data","width","pictureURL","columns","members","makePicture","makeInfoRow"], body: async (FileAttachment,html) => {
-const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, parquetToJson, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js"), import("../../_import/components/member.c482cc74.js")]);
+const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, parquetToJson, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js"), import("../../_import/components/member.3f969626.js")]);
 
 const membersParquet = await FileAttachment("../../data/member/all.parquet").parquet();
 const data = await FileAttachment("../../data/member/김허남_2AS29941.json").json();
@@ -404,6 +404,6 @@ fixMaxWidth();
 <div class="observablehq observablehq--block"><!--:ec9c850b:--></div>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T16:57:16">Dec 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T21:35:12">Dec 11, 2024</a>.</div>
 </footer>
 </div>

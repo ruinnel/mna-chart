@@ -15,7 +15,6 @@ export function makeCoworkerRank(allMembers, mappings, billIds, age, ignoreCode)
         .map((winAge) => _.toInteger(winAge))
         .findIndex((winAge) => (winAge == age));
 
-        console.log(member)
     const party = _.split(member.PoliticalPartyNames, "/")[idx] || "";
     return {
         code: k, count: v,
