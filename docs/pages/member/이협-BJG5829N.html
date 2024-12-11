@@ -10,19 +10,22 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="../../_observablehq/theme-cotton,wide.0a3aa039.css">
 <link rel="stylesheet" type="text/css" href="../../_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="modulepreload" href="../../_observablehq/client.b1838636.js">
-<link rel="modulepreload" href="../../_observablehq/runtime.8eb97cbb.js">
-<link rel="modulepreload" href="../../_observablehq/stdlib.8048ec16.js">
+<link rel="modulepreload" href="../../_observablehq/client.fbcbcd43.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.9e2c4211.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
-<link rel="modulepreload" href="../../_import/components/common.7e2f4611.js">
-<link rel="modulepreload" href="../../_import/components/member.ba45ca39.js">
+<link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
+<link rel="modulepreload" href="../../_import/components/member.c482cc74.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="../../_observablehq/stdlib/inputs.9d076414.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
 <link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/e828d8c8.js">
-<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="../../_npm/apache-arrow@17.0.0/cb538fd8.js">
+<link rel="modulepreload" href="../../_npm/parquet-wasm@0.6.1/2b594949.js">
 <link rel="modulepreload" href="../../_npm/isoformat@0.2.1/c68fbd73.js">
 <link rel="modulepreload" href="../../_npm/d3@7.9.0/7055d4c5.js">
 <link rel="modulepreload" href="../../_npm/interval-tree-1d@1.0.4/a62ae5ce.js">
+<link rel="modulepreload" href="../../_npm/tslib@2.8.1/0acfc2bf.js">
+<link rel="modulepreload" href="../../_npm/flatbuffers@24.3.25/fd24637b.js">
 <link rel="modulepreload" href="../../_npm/d3-array@3.2.4/e95f898e.js">
 <link rel="modulepreload" href="../../_npm/d3-axis@3.0.0/d44feff9.js">
 <link rel="modulepreload" href="../../_npm/d3-brush@3.0.0/5830b12a.js">
@@ -32,6 +35,7 @@
 <link rel="modulepreload" href="../../_npm/d3-delaunay@6.0.4/00c41b5d.js">
 <link rel="modulepreload" href="../../_npm/d3-dispatch@3.0.1/b5f7cdc6.js">
 <link rel="modulepreload" href="../../_npm/d3-drag@3.0.0/b22c5864.js">
+<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/407f7a1f.js">
 <link rel="modulepreload" href="../../_npm/d3-ease@3.0.1/6f15f633.js">
 <link rel="modulepreload" href="../../_npm/d3-fetch@3.0.1/ef1ec490.js">
 <link rel="modulepreload" href="../../_npm/d3-force@3.0.0/5e1ff060.js">
@@ -69,28 +73,28 @@
   </script>
 <script type="module">
 
-import {define} from "../../_observablehq/client.b1838636.js";
-import {registerFile} from "../../_observablehq/stdlib.8048ec16.js";
+import {define} from "../../_observablehq/client.fbcbcd43.js";
+import {registerFile} from "../../_observablehq/stdlib.ae9c689f.js";
 
-registerFile("../../data/bill-proposal/age_13.csv", {"name":"../../data/bill-proposal/age_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_13.15e2b91b.csv","lastModified":1732977016597,"size":174688});
-registerFile("../../data/bill-proposal/age_14.csv", {"name":"../../data/bill-proposal/age_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_14.164b2c16.csv","lastModified":1732977016597,"size":107455});
-registerFile("../../data/bill-proposal/age_15.csv", {"name":"../../data/bill-proposal/age_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_15.a00ce05f.csv","lastModified":1732977016597,"size":364317});
-registerFile("../../data/bill-proposal/age_16.csv", {"name":"../../data/bill-proposal/age_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_16.334377ac.csv","lastModified":1732977016598,"size":951972});
-registerFile("../../data/bill-proposal/age_17.csv", {"name":"../../data/bill-proposal/age_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_17.4d149b32.csv","lastModified":1732977016600,"size":3163850});
-registerFile("../../data/bill-proposal/age_18.csv", {"name":"../../data/bill-proposal/age_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_18.4fe5fae4.csv","lastModified":1732977016604,"size":6399848});
-registerFile("../../data/bill-proposal/age_19.csv", {"name":"../../data/bill-proposal/age_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_19.f477a8b9.csv","lastModified":1732977016611,"size":8850625});
-registerFile("../../data/bill-proposal/age_20.csv", {"name":"../../data/bill-proposal/age_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_20.8bb599e6.csv","lastModified":1732977016618,"size":12221829});
-registerFile("../../data/bill-proposal/age_21.csv", {"name":"../../data/bill-proposal/age_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_21.583e0cc6.csv","lastModified":1732977016627,"size":13429281});
-registerFile("../../data/bill-proposal/mappings_13.csv", {"name":"../../data/bill-proposal/mappings_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_13.7d89d807.csv","lastModified":1732978953487,"size":55913});
-registerFile("../../data/bill-proposal/mappings_14.csv", {"name":"../../data/bill-proposal/mappings_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_14.966ab01b.csv","lastModified":1732978953487,"size":88645});
-registerFile("../../data/bill-proposal/mappings_15.csv", {"name":"../../data/bill-proposal/mappings_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_15.61267f06.csv","lastModified":1732978953488,"size":380260});
-registerFile("../../data/bill-proposal/mappings_16.csv", {"name":"../../data/bill-proposal/mappings_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_16.6f03b8e5.csv","lastModified":1732978953489,"size":1784800});
-registerFile("../../data/bill-proposal/mappings_17.csv", {"name":"../../data/bill-proposal/mappings_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_17.69319f8a.csv","lastModified":1732978953493,"size":5726681});
-registerFile("../../data/bill-proposal/mappings_18.csv", {"name":"../../data/bill-proposal/mappings_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_18.d0e66788.csv","lastModified":1732978953500,"size":11570552});
-registerFile("../../data/bill-proposal/mappings_19.csv", {"name":"../../data/bill-proposal/mappings_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_19.4b127708.csv","lastModified":1732978953510,"size":15525288});
-registerFile("../../data/bill-proposal/mappings_20.csv", {"name":"../../data/bill-proposal/mappings_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_20.3ed8528e.csv","lastModified":1732978953523,"size":20693069});
-registerFile("../../data/bill-proposal/mappings_21.csv", {"name":"../../data/bill-proposal/mappings_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_21.26cfd0f6.csv","lastModified":1732978953538,"size":22845867});
-registerFile("../../data/member/all.csv", {"name":"../../data/member/all.csv","mimeType":"text/csv","path":"../../_file/data/member/all.1244f34a.csv","lastModified":1732859080044,"size":1418595});
+registerFile("../../data/bill-proposal/age_13.parquet", {"name":"../../data/bill-proposal/age_13.parquet","path":"../../_file/data/bill-proposal/age_13.93f71786.parquet","lastModified":1733903827886,"size":48873});
+registerFile("../../data/bill-proposal/age_14.parquet", {"name":"../../data/bill-proposal/age_14.parquet","path":"../../_file/data/bill-proposal/age_14.df363d7d.parquet","lastModified":1733903827886,"size":39618});
+registerFile("../../data/bill-proposal/age_15.parquet", {"name":"../../data/bill-proposal/age_15.parquet","path":"../../_file/data/bill-proposal/age_15.a37f81c1.parquet","lastModified":1733903827886,"size":84881});
+registerFile("../../data/bill-proposal/age_16.parquet", {"name":"../../data/bill-proposal/age_16.parquet","path":"../../_file/data/bill-proposal/age_16.0adf9c7d.parquet","lastModified":1733903827887,"size":228035});
+registerFile("../../data/bill-proposal/age_17.parquet", {"name":"../../data/bill-proposal/age_17.parquet","path":"../../_file/data/bill-proposal/age_17.5a8660d9.parquet","lastModified":1733903827890,"size":848852});
+registerFile("../../data/bill-proposal/age_18.parquet", {"name":"../../data/bill-proposal/age_18.parquet","path":"../../_file/data/bill-proposal/age_18.2de6f5d4.parquet","lastModified":1733903827897,"size":1942399});
+registerFile("../../data/bill-proposal/age_19.parquet", {"name":"../../data/bill-proposal/age_19.parquet","path":"../../_file/data/bill-proposal/age_19.b5d56d37.parquet","lastModified":1733903827906,"size":2742169});
+registerFile("../../data/bill-proposal/age_20.parquet", {"name":"../../data/bill-proposal/age_20.parquet","path":"../../_file/data/bill-proposal/age_20.a04325a8.parquet","lastModified":1733903827919,"size":3702637});
+registerFile("../../data/bill-proposal/age_21.parquet", {"name":"../../data/bill-proposal/age_21.parquet","path":"../../_file/data/bill-proposal/age_21.485d96b4.parquet","lastModified":1733903827935,"size":4105522});
+registerFile("../../data/bill-proposal/mappings_13.parquet", {"name":"../../data/bill-proposal/mappings_13.parquet","path":"../../_file/data/bill-proposal/mappings_13.c9668506.parquet","lastModified":1733903827935,"size":13957});
+registerFile("../../data/bill-proposal/mappings_14.parquet", {"name":"../../data/bill-proposal/mappings_14.parquet","path":"../../_file/data/bill-proposal/mappings_14.6bdccc0f.parquet","lastModified":1733903827935,"size":13676});
+registerFile("../../data/bill-proposal/mappings_15.parquet", {"name":"../../data/bill-proposal/mappings_15.parquet","path":"../../_file/data/bill-proposal/mappings_15.e479cc04.parquet","lastModified":1733903827935,"size":38210});
+registerFile("../../data/bill-proposal/mappings_16.parquet", {"name":"../../data/bill-proposal/mappings_16.parquet","path":"../../_file/data/bill-proposal/mappings_16.62ed1f74.parquet","lastModified":1733903827936,"size":164648});
+registerFile("../../data/bill-proposal/mappings_17.parquet", {"name":"../../data/bill-proposal/mappings_17.parquet","path":"../../_file/data/bill-proposal/mappings_17.920eff88.parquet","lastModified":1733903827938,"size":506003});
+registerFile("../../data/bill-proposal/mappings_18.parquet", {"name":"../../data/bill-proposal/mappings_18.parquet","path":"../../_file/data/bill-proposal/mappings_18.b80b343e.parquet","lastModified":1733903827941,"size":1033445});
+registerFile("../../data/bill-proposal/mappings_19.parquet", {"name":"../../data/bill-proposal/mappings_19.parquet","path":"../../_file/data/bill-proposal/mappings_19.34aef741.parquet","lastModified":1733903827946,"size":1395808});
+registerFile("../../data/bill-proposal/mappings_20.parquet", {"name":"../../data/bill-proposal/mappings_20.parquet","path":"../../_file/data/bill-proposal/mappings_20.f609d59e.parquet","lastModified":1733903827952,"size":1881500});
+registerFile("../../data/bill-proposal/mappings_21.parquet", {"name":"../../data/bill-proposal/mappings_21.parquet","path":"../../_file/data/bill-proposal/mappings_21.1c5b9f4d.parquet","lastModified":1733903827959,"size":2129718});
+registerFile("../../data/member/all.parquet", {"name":"../../data/member/all.parquet","path":"../../_file/data/member/all.89821d3c.parquet","lastModified":1733903827960,"size":420014});
 registerFile("../../data/member/이협_BJG5829N.json", {"name":"../../data/member/이협_BJG5829N.json","mimeType":"application/json","path":"../../_file/data/member/이협_BJG5829N.b3373d32.json","lastModified":1732977034634,"size":5773});
 
 define({id: "0a5a0ada", mode: "inline", inputs: ["display"], body: async (display) => {
@@ -105,14 +109,17 @@ display(await(
 ))
 }});
 
-define({id: "3052c2d0", inputs: ["FileAttachment","html"], outputs: ["_","allStatus","allKind","allStatusColors","targetAges","billProposals","billProposalMappings","fixMaxWidth","makeCoworkerRank","coworkerRankMemberChart","coworkerRankPartyChart","members","data","width","pictureURL","makePicture","makeInfoRow"], body: async (FileAttachment,html) => {
-const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.7e2f4611.js"), import("../../_import/components/member.ba45ca39.js")]);
+define({id: "ef26cb33", inputs: ["FileAttachment","html"], outputs: ["_","allStatus","allKind","allStatusColors","targetAges","parquetToJson","billProposals","billProposalMappings","fixMaxWidth","makeCoworkerRank","coworkerRankMemberChart","coworkerRankPartyChart","membersParquet","data","width","pictureURL","columns","members","makePicture","makeInfoRow"], body: async (FileAttachment,html) => {
+const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, parquetToJson, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js"), import("../../_import/components/member.c482cc74.js")]);
 
-const members = await FileAttachment("../../data/member/all.csv").csv({typed: false})
+const membersParquet = await FileAttachment("../../data/member/all.parquet").parquet();
 const data = await FileAttachment("../../data/member/이협_BJG5829N.json").json();
 const width = window.innerWidth;
 
 const pictureURL = data.pictureURL;
+
+const columns = ["Name", "Code", "PoliticalPartyNames", "WinAges", "ReElectName"]
+const members = parquetToJson(membersParquet, columns);
 
 function makePicture(image) {
     return html`<img style="max-height: 340px;" src="${image}" width="100%" />`
@@ -129,7 +136,7 @@ function makeInfoRow(label, value) {
     `;
 }
 
-return {_,allStatus,allKind,allStatusColors,targetAges,billProposals,billProposalMappings,fixMaxWidth,makeCoworkerRank,coworkerRankMemberChart,coworkerRankPartyChart,members,data,width,pictureURL,makePicture,makeInfoRow};
+return {_,allStatus,allKind,allStatusColors,targetAges,parquetToJson,billProposals,billProposalMappings,fixMaxWidth,makeCoworkerRank,coworkerRankMemberChart,coworkerRankPartyChart,membersParquet,data,width,pictureURL,columns,members,makePicture,makeInfoRow};
 }});
 
 define({id: "4251d287", mode: "inline", inputs: ["makePicture","data","display"], body: async (makePicture,data,display) => {
@@ -208,12 +215,11 @@ const selectedAge = view(Inputs.select(ageList, {value: _.first(ageList), label:
 return {kind,ageList,selectedAge};
 }});
 
-define({id: "6a18e072", inputs: ["data","selectedAge","billProposals","billProposalMappings","makeCoworkerRank","members"], outputs: ["career","billProposal","mappings","rank"], body: async (data,selectedAge,billProposals,billProposalMappings,makeCoworkerRank,members) => {
+define({id: "a74cee3d", inputs: ["data","selectedAge","parquetToJson","billProposalMappings","makeCoworkerRank","members"], outputs: ["career","mappings","rank"], body: async (data,selectedAge,parquetToJson,billProposalMappings,makeCoworkerRank,members) => {
 const career = data.career.ages[selectedAge];
-const billProposal = await billProposals[selectedAge];
-const mappings = await billProposalMappings[selectedAge];
-const rank = makeCoworkerRank(members, billProposal, mappings, career.representativeBillIds, selectedAge, data.code);
-return {career,billProposal,mappings,rank};
+const mappings = parquetToJson(await billProposalMappings[selectedAge]);
+const rank = makeCoworkerRank(members, mappings, career.representativeBillIds, selectedAge, data.code);
+return {career,mappings,rank};
 }});
 
 define({id: "1d8680c5", mode: "inline", inputs: ["kind","coworkerRankMemberChart","rank","width","coworkerRankPartyChart","display"], body: async (kind,coworkerRankMemberChart,rank,width,coworkerRankPartyChart,display) => {
@@ -222,28 +228,32 @@ kind == "국회의원별" ? coworkerRankMemberChart(rank, {width}) : coworkerRan
 ))
 }});
 
-define({id: "77fb3f44", inputs: ["html","_","Inputs","allStatus","view"], outputs: ["makeLink","makeBillProposalTable","statusList","status"], body: (html,_,Inputs,allStatus,view) => {
+define({id: "e01c1baf", inputs: ["html","_","Inputs","allStatus","view"], outputs: ["makeLink","makeBillProposalTable","statusList","status"], body: (html,_,Inputs,allStatus,view) => {
 function makeLink(text, row) {
-  const url = row["상세페이지"];
+  const url = row.DetailURL;
   return html`<a href="${url}" target="_blank">${text}</a>`;
 }
 
 function makeBillProposalTable(billProposal, billIds, age, status) {
-  let proposals = billProposal.filter((row) => _.includes(billIds, row["의안ID"]));
+  let proposals = billProposal.filter((row) => _.includes(billIds, row.BillID));
   if (status !== "전체") {
-    proposals = proposals.filter((row) => (row["본회의심의결과"] == status));
+    proposals = proposals.filter((row) => (row.ProcessResult == status));
   }
-
-  const columns = ["의안번호", "법률안명", "소관위원회", "본회의심의결과"];
+  const columns = ["BillNo", "BillName", "Commitee", "ProcessResult"];
   const width = {
     "의안번호": "10%",
     "법률안명": "50%",
     "소관위원회": "20%",
     "본회의심의결과": "10%",
   };
-  const header = {};
+  const header = {
+    BillNo: "의안번호",
+    BillName: "법률안명",
+    Commitee: "소관위원회",
+    ProcessResult: "본회의심의결과",
+  };
   const format = {
-    "의안번호": (v) => makeLink(v, proposals.find((row) => (row["의안번호"] == v))),
+    "BillNo": (v) => makeLink(v, proposals.find((row) => (row.BillNo == v))),
   };
   const total = proposals.length;
   return html`<div>
@@ -257,12 +267,12 @@ const status = view(Inputs.select(statusList, {value: "전체", label: "법안 �
 return {makeLink,makeBillProposalTable,statusList,status};
 }});
 
-define({id: "6f069971", inputs: ["_","data","billProposals"], outputs: ["ages","loadedBillProposal"], body: async (_,data,billProposals) => {
+define({id: "f52d31b5", inputs: ["_","data","parquetToJson","billProposals"], outputs: ["ages","loadedBillProposal"], body: async (_,data,parquetToJson,billProposals) => {
 const ages = _.keys(data.career.ages);
 const loadedBillProposal = {}
 for (let i = 0; i < ages.length; i++) {
   const age = ages[i];
-  loadedBillProposal[age] = await billProposals[age];
+  loadedBillProposal[age] = parquetToJson(await billProposals[age]);
 }
 return {ages,loadedBillProposal};
 }});
@@ -336,7 +346,7 @@ fixMaxWidth();
 <h1 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#"><observablehq-loading></observablehq-loading><!--:0a5a0ada:--> (<observablehq-loading></observablehq-loading><!--:7f00b6f1:-->)</a></h1>
 <br>
 <h2 id="-1" tabindex="-1"><a class="observablehq-header-anchor" href="#-1">기본 정보</a></h2>
-<div class="observablehq observablehq--block"><!--:3052c2d0:--></div>
+<div class="observablehq observablehq--block"><!--:ef26cb33:--></div>
 <div class="grid grid-cols-3">
   <div class="card grid-rowspan-4">
     <observablehq-loading></observablehq-loading><!--:4251d287:-->
@@ -359,14 +369,14 @@ fixMaxWidth();
 <hr>
 <h2 id="-3" tabindex="-1"><a class="observablehq-header-anchor" href="#-3">공동발의자 분포</a></h2>
 <div class="observablehq observablehq--block"><!--:240c56cc:--></div>
-<div class="observablehq observablehq--block"><!--:6a18e072:--></div>
+<div class="observablehq observablehq--block"><!--:a74cee3d:--></div>
 <div class="card">
 <observablehq-loading></observablehq-loading><!--:1d8680c5:-->
 </div>
 <hr>
 <h2 id="-4" tabindex="-1"><a class="observablehq-header-anchor" href="#-4">임기별 대표발의 법안 내역</a></h2>
-<div class="observablehq observablehq--block"><!--:77fb3f44:--></div>
-<div class="observablehq observablehq--block"><!--:6f069971:--></div>
+<div class="observablehq observablehq--block"><!--:e01c1baf:--></div>
+<div class="observablehq observablehq--block"><!--:f52d31b5:--></div>
 <div class="card">
   <observablehq-loading></observablehq-loading><!--:6f2f0adc:-->
 </div>
@@ -394,6 +404,6 @@ fixMaxWidth();
 <div class="observablehq observablehq--block"><!--:ec9c850b:--></div>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-09T00:55:58">Dec 9, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T16:57:16">Dec 11, 2024</a>.</div>
 </footer>
 </div>

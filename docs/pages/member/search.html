@@ -10,15 +10,18 @@
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&amp;display=swap" crossorigin>
 <link rel="stylesheet" type="text/css" href="../../_observablehq/theme-cotton,wide.0a3aa039.css">
 <link rel="stylesheet" type="text/css" href="../../_observablehq/stdlib/inputs.ea9fd553.css">
-<link rel="modulepreload" href="../../_observablehq/client.b1838636.js">
-<link rel="modulepreload" href="../../_observablehq/runtime.8eb97cbb.js">
-<link rel="modulepreload" href="../../_observablehq/stdlib.8048ec16.js">
+<link rel="modulepreload" href="../../_observablehq/client.fbcbcd43.js">
+<link rel="modulepreload" href="../../_observablehq/runtime.9e2c4211.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
-<link rel="modulepreload" href="../../_import/components/common.7e2f4611.js">
+<link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
-<link rel="modulepreload" href="../../_observablehq/stdlib/inputs.9d076414.js">
-<link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/407f7a1f.js">
+<link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
+<link rel="modulepreload" href="../../_npm/apache-arrow@17.0.0/cb538fd8.js">
+<link rel="modulepreload" href="../../_npm/parquet-wasm@0.6.1/2b594949.js">
 <link rel="modulepreload" href="../../_npm/isoformat@0.2.1/c68fbd73.js">
+<link rel="modulepreload" href="../../_npm/tslib@2.8.1/0acfc2bf.js">
+<link rel="modulepreload" href="../../_npm/flatbuffers@24.3.25/fd24637b.js">
 <link rel="icon" href="../../_file/observable.1af93621.png" type="image/png" sizes="32x32">
 
   <!-- Google tag (gtag.js) -->
@@ -32,44 +35,47 @@
   </script>
 <script type="module">
 
-import {define} from "../../_observablehq/client.b1838636.js";
-import {registerFile} from "../../_observablehq/stdlib.8048ec16.js";
+import {define} from "../../_observablehq/client.fbcbcd43.js";
+import {registerFile} from "../../_observablehq/stdlib.ae9c689f.js";
 
-registerFile("../../data/bill-proposal/age_13.csv", {"name":"../../data/bill-proposal/age_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_13.15e2b91b.csv","lastModified":1732977016597,"size":174688});
-registerFile("../../data/bill-proposal/age_14.csv", {"name":"../../data/bill-proposal/age_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_14.164b2c16.csv","lastModified":1732977016597,"size":107455});
-registerFile("../../data/bill-proposal/age_15.csv", {"name":"../../data/bill-proposal/age_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_15.a00ce05f.csv","lastModified":1732977016597,"size":364317});
-registerFile("../../data/bill-proposal/age_16.csv", {"name":"../../data/bill-proposal/age_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_16.334377ac.csv","lastModified":1732977016598,"size":951972});
-registerFile("../../data/bill-proposal/age_17.csv", {"name":"../../data/bill-proposal/age_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_17.4d149b32.csv","lastModified":1732977016600,"size":3163850});
-registerFile("../../data/bill-proposal/age_18.csv", {"name":"../../data/bill-proposal/age_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_18.4fe5fae4.csv","lastModified":1732977016604,"size":6399848});
-registerFile("../../data/bill-proposal/age_19.csv", {"name":"../../data/bill-proposal/age_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_19.f477a8b9.csv","lastModified":1732977016611,"size":8850625});
-registerFile("../../data/bill-proposal/age_20.csv", {"name":"../../data/bill-proposal/age_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_20.8bb599e6.csv","lastModified":1732977016618,"size":12221829});
-registerFile("../../data/bill-proposal/age_21.csv", {"name":"../../data/bill-proposal/age_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/age_21.583e0cc6.csv","lastModified":1732977016627,"size":13429281});
-registerFile("../../data/bill-proposal/mappings_13.csv", {"name":"../../data/bill-proposal/mappings_13.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_13.7d89d807.csv","lastModified":1732978953487,"size":55913});
-registerFile("../../data/bill-proposal/mappings_14.csv", {"name":"../../data/bill-proposal/mappings_14.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_14.966ab01b.csv","lastModified":1732978953487,"size":88645});
-registerFile("../../data/bill-proposal/mappings_15.csv", {"name":"../../data/bill-proposal/mappings_15.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_15.61267f06.csv","lastModified":1732978953488,"size":380260});
-registerFile("../../data/bill-proposal/mappings_16.csv", {"name":"../../data/bill-proposal/mappings_16.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_16.6f03b8e5.csv","lastModified":1732978953489,"size":1784800});
-registerFile("../../data/bill-proposal/mappings_17.csv", {"name":"../../data/bill-proposal/mappings_17.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_17.69319f8a.csv","lastModified":1732978953493,"size":5726681});
-registerFile("../../data/bill-proposal/mappings_18.csv", {"name":"../../data/bill-proposal/mappings_18.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_18.d0e66788.csv","lastModified":1732978953500,"size":11570552});
-registerFile("../../data/bill-proposal/mappings_19.csv", {"name":"../../data/bill-proposal/mappings_19.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_19.4b127708.csv","lastModified":1732978953510,"size":15525288});
-registerFile("../../data/bill-proposal/mappings_20.csv", {"name":"../../data/bill-proposal/mappings_20.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_20.3ed8528e.csv","lastModified":1732978953523,"size":20693069});
-registerFile("../../data/bill-proposal/mappings_21.csv", {"name":"../../data/bill-proposal/mappings_21.csv","mimeType":"text/csv","path":"../../_file/data/bill-proposal/mappings_21.26cfd0f6.csv","lastModified":1732978953538,"size":22845867});
-registerFile("../../data/member/all.csv", {"name":"../../data/member/all.csv","mimeType":"text/csv","path":"../../_file/data/member/all.1244f34a.csv","lastModified":1732859080044,"size":1418595});
+registerFile("../../data/bill-proposal/age_13.parquet", {"name":"../../data/bill-proposal/age_13.parquet","path":"../../_file/data/bill-proposal/age_13.93f71786.parquet","lastModified":1733903827886,"size":48873});
+registerFile("../../data/bill-proposal/age_14.parquet", {"name":"../../data/bill-proposal/age_14.parquet","path":"../../_file/data/bill-proposal/age_14.df363d7d.parquet","lastModified":1733903827886,"size":39618});
+registerFile("../../data/bill-proposal/age_15.parquet", {"name":"../../data/bill-proposal/age_15.parquet","path":"../../_file/data/bill-proposal/age_15.a37f81c1.parquet","lastModified":1733903827886,"size":84881});
+registerFile("../../data/bill-proposal/age_16.parquet", {"name":"../../data/bill-proposal/age_16.parquet","path":"../../_file/data/bill-proposal/age_16.0adf9c7d.parquet","lastModified":1733903827887,"size":228035});
+registerFile("../../data/bill-proposal/age_17.parquet", {"name":"../../data/bill-proposal/age_17.parquet","path":"../../_file/data/bill-proposal/age_17.5a8660d9.parquet","lastModified":1733903827890,"size":848852});
+registerFile("../../data/bill-proposal/age_18.parquet", {"name":"../../data/bill-proposal/age_18.parquet","path":"../../_file/data/bill-proposal/age_18.2de6f5d4.parquet","lastModified":1733903827897,"size":1942399});
+registerFile("../../data/bill-proposal/age_19.parquet", {"name":"../../data/bill-proposal/age_19.parquet","path":"../../_file/data/bill-proposal/age_19.b5d56d37.parquet","lastModified":1733903827906,"size":2742169});
+registerFile("../../data/bill-proposal/age_20.parquet", {"name":"../../data/bill-proposal/age_20.parquet","path":"../../_file/data/bill-proposal/age_20.a04325a8.parquet","lastModified":1733903827919,"size":3702637});
+registerFile("../../data/bill-proposal/age_21.parquet", {"name":"../../data/bill-proposal/age_21.parquet","path":"../../_file/data/bill-proposal/age_21.485d96b4.parquet","lastModified":1733903827935,"size":4105522});
+registerFile("../../data/bill-proposal/mappings_13.parquet", {"name":"../../data/bill-proposal/mappings_13.parquet","path":"../../_file/data/bill-proposal/mappings_13.c9668506.parquet","lastModified":1733903827935,"size":13957});
+registerFile("../../data/bill-proposal/mappings_14.parquet", {"name":"../../data/bill-proposal/mappings_14.parquet","path":"../../_file/data/bill-proposal/mappings_14.6bdccc0f.parquet","lastModified":1733903827935,"size":13676});
+registerFile("../../data/bill-proposal/mappings_15.parquet", {"name":"../../data/bill-proposal/mappings_15.parquet","path":"../../_file/data/bill-proposal/mappings_15.e479cc04.parquet","lastModified":1733903827935,"size":38210});
+registerFile("../../data/bill-proposal/mappings_16.parquet", {"name":"../../data/bill-proposal/mappings_16.parquet","path":"../../_file/data/bill-proposal/mappings_16.62ed1f74.parquet","lastModified":1733903827936,"size":164648});
+registerFile("../../data/bill-proposal/mappings_17.parquet", {"name":"../../data/bill-proposal/mappings_17.parquet","path":"../../_file/data/bill-proposal/mappings_17.920eff88.parquet","lastModified":1733903827938,"size":506003});
+registerFile("../../data/bill-proposal/mappings_18.parquet", {"name":"../../data/bill-proposal/mappings_18.parquet","path":"../../_file/data/bill-proposal/mappings_18.b80b343e.parquet","lastModified":1733903827941,"size":1033445});
+registerFile("../../data/bill-proposal/mappings_19.parquet", {"name":"../../data/bill-proposal/mappings_19.parquet","path":"../../_file/data/bill-proposal/mappings_19.34aef741.parquet","lastModified":1733903827946,"size":1395808});
+registerFile("../../data/bill-proposal/mappings_20.parquet", {"name":"../../data/bill-proposal/mappings_20.parquet","path":"../../_file/data/bill-proposal/mappings_20.f609d59e.parquet","lastModified":1733903827952,"size":1881500});
+registerFile("../../data/bill-proposal/mappings_21.parquet", {"name":"../../data/bill-proposal/mappings_21.parquet","path":"../../_file/data/bill-proposal/mappings_21.1c5b9f4d.parquet","lastModified":1733903827959,"size":2129718});
+registerFile("../../data/member/all.parquet", {"name":"../../data/member/all.parquet","path":"../../_file/data/member/all.89821d3c.parquet","lastModified":1733903827960,"size":420014});
 
-define({id: "92a00ed7", inputs: ["FileAttachment"], outputs: ["_","targetAges","fixMaxWidth","members","width","numberPattern","filteredMember"], body: async (FileAttachment) => {
-const [{default: _}, {targetAges, fixMaxWidth}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.7e2f4611.js")]);
+define({id: "7b9f64e4", inputs: ["FileAttachment"], outputs: ["_","targetAges","fixMaxWidth","parquetToJson","membersParquet","width","columns","members","numberPattern","filteredMember"], body: async (FileAttachment) => {
+const [{default: _}, {targetAges, fixMaxWidth, parquetToJson}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js")]);
 
-const members = await FileAttachment("../../data/member/all.csv").csv({typed: true})
+const membersParquet = await FileAttachment("../../data/member/all.parquet").parquet()
 const width = window.innerWidth;
+
+const columns = ["Name", "Code", "PoliticalPartyNames", "WinAges", "ReElectName"]
+const members = parquetToJson(membersParquet, columns);
 
 const numberPattern = /[0-9]+/
 const filteredMember = _.filter(members, (member) => {
-    let ages = member["당선대수"] || "";
+    let ages = member.WinAges || "";
     return _.split(ages, ",")
       .map((age) => age.replaceAll(/[^0-9]/g, ""))
       .map((age) => _.toInteger(age))
       .find((age) => (targetAges.includes(age)));
 });
-return {_,targetAges,fixMaxWidth,members,width,numberPattern,filteredMember};
+return {_,targetAges,fixMaxWidth,parquetToJson,membersParquet,width,columns,members,numberPattern,filteredMember};
 }});
 
 define({id: "68da4f03", inputs: ["view","Inputs","filteredMember"], outputs: ["search"], body: (view,Inputs,filteredMember) => {
@@ -77,15 +83,15 @@ const search = view(Inputs.search(filteredMember, {placeholder: "이름 검색",
 return {search};
 }});
 
-define({id: "63dee480", inputs: ["location","html"], outputs: ["makeSearchResult"], body: (location,html) => {
+define({id: "829ea0d0", inputs: ["location","html"], outputs: ["makeSearchResult"], body: (location,html) => {
 function makeSearchResult(item) {
     // github pages에 배포시 repository name이 path에 붙음.
     const href = location.href;
     const urlPrefix = href.substring(0, href.indexOf("/pages/member/search"));
-    let name = item["국회의원명"];
-    let code = item["국회의원코드"];
-    let party = item["정당명"];
-    let detail = `${item["재선구분명"]}(${item["당선대수"]})`
+    let name = item.Name;
+    let code = item.Code;
+    let party = item.PoliticalPartyNames;
+    let detail = `${item.ReElectName}(${item.WinAges})`
     let link = `${urlPrefix}/pages/member/${name}-${code}`
     return html`
     <a href="${link}">
@@ -162,9 +168,9 @@ fixMaxWidth();
 <main id="observablehq-main" class="observablehq">
 <br>
 <h1 id="" tabindex="-1"><a class="observablehq-header-anchor" href="#">국회의원 검색</a></h1>
-<div class="observablehq observablehq--block"><!--:92a00ed7:--></div>
+<div class="observablehq observablehq--block"><!--:7b9f64e4:--></div>
 <div class="observablehq observablehq--block"><!--:68da4f03:--></div>
-<div class="observablehq observablehq--block"><!--:63dee480:--></div>
+<div class="observablehq observablehq--block"><!--:829ea0d0:--></div>
 <div class="grid-cols-1">
   <observablehq-loading></observablehq-loading><!--:c0638857:-->
 </div>
@@ -198,6 +204,6 @@ fixMaxWidth();
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="../bill-proposal/party-13"><span>제 13대</span></a><a rel="next" href="./rebellion"><span>윤석렬 대통령 탄핵소추안 불참 명단</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-09T00:55:58">Dec 9, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T16:57:16">Dec 11, 2024</a>.</div>
 </footer>
 </div>
