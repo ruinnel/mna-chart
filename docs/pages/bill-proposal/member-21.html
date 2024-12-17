@@ -14,8 +14,8 @@
 <link rel="modulepreload" href="../../_observablehq/runtime.9e2c4211.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
-<link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
-<link rel="modulepreload" href="../../_import/components/bill-proposal.8c971371.js">
+<link rel="modulepreload" href="../../_import/components/common.293b8c6f.js">
+<link rel="modulepreload" href="../../_import/components/bill-proposal.c4fcbe9a.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
 <link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/e828d8c8.js">
@@ -104,7 +104,7 @@ display(await(
 }});
 
 define({id: "d1d56e9f", inputs: ["FileAttachment","view","Inputs"], outputs: ["_","allStatus","allKind","allStatusColors","fixMaxWidth","billProposalMemberChart","billProposalMemberTable","getBiggestRecord","records","width","kind","status"], body: async (FileAttachment,view,Inputs) => {
-const [{default: _}, {allStatus, allKind, allStatusColors, fixMaxWidth}, {billProposalMemberChart, billProposalMemberTable, getBiggestRecord}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js"), import("../../_import/components/bill-proposal.8c971371.js")]);
+const [{default: _}, {allStatus, allKind, allStatusColors, fixMaxWidth}, {billProposalMemberChart, billProposalMemberTable, getBiggestRecord}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.293b8c6f.js"), import("../../_import/components/bill-proposal.c4fcbe9a.js")]);
 
 const records = await FileAttachment("../../data/bill-proposal/record_21.csv").csv({typed: true})
 const width = window.innerWidth;
@@ -262,6 +262,6 @@ fixMaxWidth();
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="../../"><span>국회의원 통계</span></a><a rel="next" href="./member-20"><span>제 20대</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T21:35:12">Dec 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-17T22:40:34">Dec 17, 2024</a>.</div>
 </footer>
 </div>

@@ -14,8 +14,8 @@
 <link rel="modulepreload" href="../../_observablehq/runtime.9e2c4211.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
-<link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
-<link rel="modulepreload" href="../../_import/components/member.3f969626.js">
+<link rel="modulepreload" href="../../_import/components/common.293b8c6f.js">
+<link rel="modulepreload" href="../../_import/components/member.b552025e.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
 <link rel="modulepreload" href="../../_npm/@observablehq/plot@0.6.16/e828d8c8.js">
@@ -110,7 +110,7 @@ display(await(
 }});
 
 define({id: "ef26cb33", inputs: ["FileAttachment","html"], outputs: ["_","allStatus","allKind","allStatusColors","targetAges","parquetToJson","billProposals","billProposalMappings","fixMaxWidth","makeCoworkerRank","coworkerRankMemberChart","coworkerRankPartyChart","membersParquet","data","width","pictureURL","columns","members","makePicture","makeInfoRow"], body: async (FileAttachment,html) => {
-const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, parquetToJson, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js"), import("../../_import/components/member.3f969626.js")]);
+const [{default: _}, {allStatus, allKind, allStatusColors, targetAges, parquetToJson, billProposals, billProposalMappings, fixMaxWidth}, {makeCoworkerRank, coworkerRankMemberChart, coworkerRankPartyChart}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.293b8c6f.js"), import("../../_import/components/member.b552025e.js")]);
 
 const membersParquet = await FileAttachment("../../data/member/all.parquet").parquet();
 const data = await FileAttachment("../../data/member/강득구_8P37634C.json").json();
@@ -215,9 +215,9 @@ const selectedAge = view(Inputs.select(ageList, {value: _.first(ageList), label:
 return {kind,ageList,selectedAge};
 }});
 
-define({id: "a74cee3d", inputs: ["data","selectedAge","parquetToJson","billProposalMappings","makeCoworkerRank","members"], outputs: ["career","mappings","rank"], body: async (data,selectedAge,parquetToJson,billProposalMappings,makeCoworkerRank,members) => {
+define({id: "62cf2d4b", inputs: ["data","selectedAge","parquetToJson","billProposalMappings","makeCoworkerRank","members"], outputs: ["career","mappings","rank"], body: async (data,selectedAge,parquetToJson,billProposalMappings,makeCoworkerRank,members) => {
 const career = data.career.ages[selectedAge];
-const mappings = parquetToJson(await billProposalMappings[selectedAge]);
+const mappings = parquetToJson(await billProposalMappings.get(selectedAge));
 const rank = makeCoworkerRank(members, mappings, career.representativeBillIds, selectedAge, data.code);
 return {career,mappings,rank};
 }});
@@ -267,12 +267,12 @@ const status = view(Inputs.select(statusList, {value: "전체", label: "법안 �
 return {makeLink,makeBillProposalTable,statusList,status};
 }});
 
-define({id: "f52d31b5", inputs: ["_","data","parquetToJson","billProposals"], outputs: ["ages","loadedBillProposal"], body: async (_,data,parquetToJson,billProposals) => {
+define({id: "4392b348", inputs: ["_","data","parquetToJson","billProposals"], outputs: ["ages","loadedBillProposal"], body: async (_,data,parquetToJson,billProposals) => {
 const ages = _.keys(data.career.ages);
 const loadedBillProposal = {}
 for (let i = 0; i < ages.length; i++) {
   const age = ages[i];
-  loadedBillProposal[age] = parquetToJson(await billProposals[age]);
+  loadedBillProposal[age] = parquetToJson(await billProposals.get(age));
 }
 return {ages,loadedBillProposal};
 }});
@@ -369,14 +369,14 @@ fixMaxWidth();
 <hr>
 <h2 id="-3" tabindex="-1"><a class="observablehq-header-anchor" href="#-3">공동발의자 분포</a></h2>
 <div class="observablehq observablehq--block"><!--:240c56cc:--></div>
-<div class="observablehq observablehq--block"><!--:a74cee3d:--></div>
+<div class="observablehq observablehq--block"><!--:62cf2d4b:--></div>
 <div class="card">
 <observablehq-loading></observablehq-loading><!--:1d8680c5:-->
 </div>
 <hr>
 <h2 id="-4" tabindex="-1"><a class="observablehq-header-anchor" href="#-4">임기별 대표발의 법안 내역</a></h2>
 <div class="observablehq observablehq--block"><!--:e01c1baf:--></div>
-<div class="observablehq observablehq--block"><!--:f52d31b5:--></div>
+<div class="observablehq observablehq--block"><!--:4392b348:--></div>
 <div class="card">
   <observablehq-loading></observablehq-loading><!--:6f2f0adc:-->
 </div>
@@ -404,6 +404,6 @@ fixMaxWidth();
 <div class="observablehq observablehq--block"><!--:ec9c850b:--></div>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T21:35:12">Dec 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-17T22:40:34">Dec 17, 2024</a>.</div>
 </footer>
 </div>

@@ -1,7 +1,7 @@
 import _ from "../../_npm/lodash@4.17.21/cbfa4f05.js";
 import * as Plot from "../../_npm/@observablehq/plot@0.6.16/e828d8c8.js";
 import * as Inputs from "../../_observablehq/stdlib/inputs.2f840ec6.js";
-import {targetAges, allStatusColors} from "./common.3179bcae.js";
+import {targetAges, allStatusColors} from "./common.293b8c6f.js";
 
 export function makeCoworkerRank(allMembers, mappings, billIds, age, ignoreCode) {
   const proposals = _.filter(mappings, (m) => (_.includes(billIds, m.BillID) && m.Code != ignoreCode));

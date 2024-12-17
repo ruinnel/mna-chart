@@ -14,7 +14,7 @@
 <link rel="modulepreload" href="../../_observablehq/runtime.9e2c4211.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib.ae9c689f.js">
 <link rel="modulepreload" href="../../_npm/lodash@4.17.21/cbfa4f05.js">
-<link rel="modulepreload" href="../../_import/components/common.3179bcae.js">
+<link rel="modulepreload" href="../../_import/components/common.293b8c6f.js">
 <link rel="modulepreload" href="../../_npm/htl@0.3.1/063eb405.js">
 <link rel="modulepreload" href="../../_observablehq/stdlib/inputs.2f840ec6.js">
 <link rel="modulepreload" href="../../_npm/d3-dsv@3.0.1/407f7a1f.js">
@@ -60,7 +60,7 @@ registerFile("../../data/bill-proposal/mappings_21.parquet", {"name":"../../data
 registerFile("../../data/member/rebellion.csv", {"name":"../../data/member/rebellion.csv","mimeType":"text/csv","path":"../../_file/data/member/rebellion.0c560989.csv","lastModified":1733670526383,"size":56498});
 
 define({id: "576a03ae", inputs: ["FileAttachment"], outputs: ["_","targetAges","fixMaxWidth","members","width"], body: async (FileAttachment) => {
-const [{default: _}, {targetAges, fixMaxWidth}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.3179bcae.js")]);
+const [{default: _}, {targetAges, fixMaxWidth}] = await Promise.all([import("../../_npm/lodash@4.17.21/cbfa4f05.js"), import("../../_import/components/common.293b8c6f.js")]);
 
 const members = await FileAttachment("../../data/member/rebellion.csv").csv({typed: true})
 const width = window.innerWidth;
@@ -184,6 +184,6 @@ fixMaxWidth();
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./search"><span>국회의원별 통계</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-11T21:35:12">Dec 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-12-17T22:40:34">Dec 17, 2024</a>.</div>
 </footer>
 </div>
