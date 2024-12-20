@@ -1,5 +1,5 @@
 import _ from "../../_npm/lodash@4.17.21/cbfa4f05.js";
-import * as Plot from "../../_npm/@observablehq/plot@0.6.16/88e6fa2a.js";
+import * as Plot from "../../_npm/@observablehq/plot@0.6.16/e828d8c8.js";
 import * as Inputs from "../../_observablehq/stdlib/inputs.76888eff.js";
 import {targetAges, allStatusColors} from "./common.293b8c6f.js";
 
